@@ -3,7 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 import { render } from '@testing-library/react';
 
-// https://jsonplaceholder.typicode.com/users
 class App extends Component {
   constructor() {
     super();
@@ -32,7 +31,6 @@ class App extends Component {
     const filteredMonsters = this.state.monsters.filter((monster) => {
       return monster.name.toLocaleLowerCase().includes(this.state.searchField)
     })
-
 
     return (
       <div className="App">
